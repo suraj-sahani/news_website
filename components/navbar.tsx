@@ -7,7 +7,7 @@ import {
   TrendingUp,
   Zap,
 } from "lucide-react";
-import { Container } from "./container";
+import { Container } from "./ui/container";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./theme-toggle";
@@ -25,7 +25,7 @@ export default function Navbar() {
     <header className="border-b">
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
-          {/* 1. LOGO (Left) */}
+          {/* LOGO */}
           <div className="shrink-0">
             <Link
               href="/"
@@ -35,7 +35,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* 2. MAIN NAV (Middle - Hidden on mobile) */}
+          {/*  MAIN NAV (Middle - Hidden on mobile) */}
           <nav className="hidden lg:block" aria-label="Main navigation">
             <ul className="flex items-center gap-8">
               {NAV_LINKS.map((link) => (
@@ -52,7 +52,7 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          {/* 3. ACTIONS (Right) */}
+          {/* ACTIONS (Right) */}
           <div className="flex items-center gap-4">
             <Button variant={"ghost"} size={"icon"}>
               <Search size={20} />
