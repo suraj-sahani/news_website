@@ -14,7 +14,7 @@ export default function HeroSection() {
       */}
       <div className="absolute inset-0 z-0 lg:hidden">
         <Image
-          src="/hero/home.jpg" // Reusing your hero image as the background
+          src="/home/hero-section/hero-image.jpg" // Reusing your hero image as the background
           alt="Global leaders forum background"
           fill
           priority
@@ -52,7 +52,10 @@ export default function HeroSection() {
             <div className="flex items-center gap-3">
               {/* Avatar hidden on mobile to match the specific "Voices in the Square" image style */}
               <Avatar className="hidden lg:flex size-10 border border-border">
-                <AvatarImage src="/hero/home_avatar.jpg" alt="Eleanor Hayes" />
+                <AvatarImage
+                  src="/home/hero-section/hero-avatar.jpg"
+                  alt="Eleanor Hayes"
+                />
                 <AvatarFallback>EH</AvatarFallback>
               </Avatar>
 
@@ -88,7 +91,7 @@ export default function HeroSection() {
           <div className="hidden lg:block relative aspect-4/3 w-full lg:aspect-square">
             <figure className="h-full w-full">
               <Image
-                src="/hero/home.jpg"
+                src="/home/hero-section/hero-image.jpg"
                 alt="Global leaders sitting in a circular forum"
                 fill
                 priority
