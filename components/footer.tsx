@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Container } from "./container";
+import { Container } from "./ui/container";
 
 const FOOTER_LINKS = {
   sections: [
@@ -84,7 +84,7 @@ export default function Footer() {
                   key={i}
                   href="#"
                   aria-label={`Follow us on Social Media ${i}`}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-background transition-colors hover:bg-muted-foreground/10"
+                  className="flex size-9 items-center justify-center rounded-lg border border-border bg-background transition-colors hover:bg-muted-foreground/10"
                 />
               ))}
             </div>
