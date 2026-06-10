@@ -12,7 +12,13 @@ export default function RelatedArticle({
   return (
     <div className="flex gap-4 items-start p-4  border-b last:border-0 border-zinc-200 dark:border-zinc-800">
       <div className="relative w-16 h-16 shrink-0 overflow-hidden rounded-md">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover"
+          sizes="64px"
+        />
       </div>
       <div className="flex flex-col">
         <h4 className="text-sm font-semibold leading-tight text-zinc-900 dark:text-zinc-100 hover:underline cursor-pointer line-clamp-2">

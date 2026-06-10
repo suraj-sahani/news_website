@@ -17,11 +17,11 @@ export const MOCK_ARTICLES: Article[] = [
     body: [
       {
         type: "paragraph",
-        text: "In the dim hours before dawn, the newsroom hums with a different kind of energy. Where copy editors once squinted at proofs, machine-learning models now scan thousands of incoming wire reports...",
+        text: "In the dim hours before dawn, the newsroom hums with a different kind of energy. Where copy editors once squinted at proofs, machine-learning models now scan thousands of incoming wire reports, ranking them by relevance and surfacing the stories most likely to define the morning agenda. It is a transformation that has unfolded not with fanfare, but in the quiet margins of daily practice.",
       },
       {
         type: "paragraph",
-        text: "For decades, the architecture of a newsroom was a study in human hierarchy — reporters feeding editors, editors feeding the front page. Today, that pipeline is increasingly mediated by software.",
+        text: "For decades, the architecture of a newsroom was a study in human hierarchy reporters feeding editors, editors feeding the front page. Today, that pipeline is increasingly mediated by software that suggests headlines, flags factual inconsistencies, and even predicts which angle a given audience will click. The result is a newsroom that is faster, leaner, and, some argue, fundamentally altered in character.",
       },
       {
         type: "quote",
@@ -30,7 +30,7 @@ export const MOCK_ARTICLES: Article[] = [
       { type: "heading", text: "When Speed Meets Scrutiny" },
       {
         type: "paragraph",
-        text: "Yet the promise of automation carries an undercurrent of unease. Editors describe a growing tension between the relentless pace these tools enable and the slower, deliberative work.",
+        text: "Yet the promise of automation carries an undercurrent of unease. Editors describe a growing tension between the relentless pace these tools enable and the slower, deliberative work that distinguishes reliable journalism from noise. The challenge ahead is not whether to adopt these systems, but how to embed them with the values that have always defined the craft.",
       },
     ],
     related: [

@@ -32,18 +32,18 @@ export default async function ArticlePage({
               <h1 className="text-2xl md:text-5xl font-source font-medium leading-tight mb-6">
                 {articleData.title}
               </h1>
-              <p className="text-lg md:text-[22px] text-zinc-300 font-light leading-relaxed mb-8">
+              <p className="text-lg md:text-[22px] text-[#FFFFFFCC] font-light leading-relaxed mb-8">
                 {articleData.description}
               </p>
 
               <div className="flex items-center gap-4 mb-8">
-                <Avatar className="h-12 w-12 border border-white/20">
+                <Avatar className="size-10">
                   <AvatarImage src={articleData.author.avatar} />
                   <AvatarFallback>EH</AvatarFallback>
                 </Avatar>
                 <div className="text-sm">
                   <p className="font-semibold">{articleData.author.name}</p>
-                  <p className="text-zinc-400">
+                  <p className="text-[#FFFFFFB2]">
                     <time dateTime={articleData.date}>March 14, 2026</time> ·{" "}
                     {articleData.readTime}
                   </p>
@@ -63,7 +63,6 @@ export default async function ArticlePage({
             </div>
 
             <div className="relative aspect-square max-w-md mx-auto lg:max-w-none lg:w-full">
-              {/* This would be the AI Network Visualization Image */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl shadow-indigo-500/20">
                 <Image
                   src={articleData.heroImage}
@@ -86,17 +85,17 @@ export default async function ArticlePage({
             <article className="flex-1 max-w-4xl">
               {/* Breadcrumbs */}
               <nav
-                className="flex items-center gap-2 text-sm text-zinc-500 mb-8"
+                className="flex items-center gap-2 text-sm text-article-muted mb-8"
                 aria-label="Breadcrumb"
               >
                 <span>Home</span>
                 <ChevronRight className="h-3 w-3" />
-                <span className="text-zinc-900 dark:text-zinc-100 font-medium">
+                <span className="text-article-main dark:text-zinc-100 font-medium">
                   {articleData.category}
                 </span>
               </nav>
 
-              <figure className="mb-10 italic text-sm text-zinc-500 leading-relaxed">
+              <figure className="mb-10 italic text-sm text-[#737373]">
                 Photograph: Growtika / Unsplash — A neural network visualization
                 inside a modern editorial workspace.
               </figure>
@@ -107,7 +106,7 @@ export default async function ArticlePage({
                     return (
                       <p
                         key={idx}
-                        className="text-zinc-700 dark:text-zinc-300 text-[17px] leading-[1.8] font-normal"
+                        className="text-article-main text-[17px] leading-[1.8] font-normal"
                       >
                         {block.text}
                       </p>
@@ -117,7 +116,7 @@ export default async function ArticlePage({
                     return (
                       <h2
                         key={idx}
-                        className="text-2xl font-bold font-source text-zinc-900 dark:text-white"
+                        className="text-2xl font-bold font-source text-article-main"
                       >
                         {block.text}
                       </h2>
@@ -126,7 +125,7 @@ export default async function ArticlePage({
                   if (block.type === "quote") {
                     return (
                       <blockquote key={idx}>
-                        <p className="text-[22px] font-serif italic text-zinc-800 dark:text-[#FAFAFACC] leading-snug text-center max-w-2xl mx-auto">
+                        <p className="text-[22px] font-serif italic text-article-muted leading-snug text-center max-w-2xl mx-auto">
                           &quot;{block.text}&quot;
                         </p>
                       </blockquote>
@@ -143,7 +142,7 @@ export default async function ArticlePage({
               <section aria-labelledby="related-title">
                 <h3
                   id="related-title"
-                  className="text-xl font-bold mb-6 text-zinc-900 dark:text-white"
+                  className="text-xl font-bold mb-6 text-article-main dark:text-white"
                 >
                   Related Articles
                 </h3>
