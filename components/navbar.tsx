@@ -54,12 +54,21 @@ export default function Navbar() {
 
           {/* ACTIONS (Right) */}
           <div className="flex items-center gap-4">
-            <Button variant={"ghost"} size={"icon"}>
-              <Search size={20} />
+            <Button
+              variant={"ghost"}
+              size={"icon"}
+              aria-label="Search articles"
+            >
+              <Search size={20} aria-hidden="true" />
             </Button>
 
-            <Button variant={"ghost"} size={"icon"} className="md:hidden">
-              <Menu size={20} />
+            <Button
+              variant={"ghost"}
+              size={"icon"}
+              className="md:hidden"
+              aria-label="Open main menu"
+            >
+              <Menu size={20} aria-hidden="true" />
             </Button>
 
             <div className="items-center gap-2 hidden md:flex">

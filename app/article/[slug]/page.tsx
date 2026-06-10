@@ -46,7 +46,10 @@ export default async function ArticlePage({
 
               <div className="flex items-center gap-4 mb-8">
                 <Avatar className="size-10">
-                  <AvatarImage src={articleData.author.avatar} />
+                  <AvatarImage
+                    src={articleData.author.avatar}
+                    alt={articleData.author.name}
+                  />
                   <AvatarFallback>EH</AvatarFallback>
                 </Avatar>
                 <div className="text-sm">

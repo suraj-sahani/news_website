@@ -18,6 +18,7 @@ export default function RelatedArticle({
           fill
           className="object-cover"
           sizes="64px"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col">
