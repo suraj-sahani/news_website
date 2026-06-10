@@ -19,6 +19,7 @@ export default function HeroSection() {
           fill
           priority
           className="object-cover"
+          sizes="768px"
         />
         {/* Dark overlay for text readability on mobile background */}
         <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/40 to-transparent" />
