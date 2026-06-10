@@ -90,21 +90,19 @@ export default function TopStories() {
                     {category}
                   </span>
                   {/* TITLE */}
-                  <h3 className="font-serif text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="font-source text-2xl font-bold text-home-main group-hover:text-primary transition-colors">
                     {title}
                   </h3>
                 </CardHeader>
 
                 {description ? (
                   <CardContent className="px-4 pt-0 pb-0 md:pb-4">
-                    <p className="text-sm text-muted-foreground">
-                      {description}
-                    </p>
+                    <p className="text-sm text-home-muted">{description}</p>
                   </CardContent>
                 ) : null}
 
                 {/* FOOTER - Author & Date (Visible on Mobile view) */}
-                <CardFooter className="md:hidden px-4 pt-0 border-none bg-transparent flex items-center gap-2 text-xs font-medium text-muted-foreground/80">
+                <CardFooter className="md:hidden px-4 pt-0 border-none bg-transparent flex items-center gap-2 text-xs font-medium text-home-muted">
                   {author && <span>By {author}</span>}
                   {author && <span className="opacity-50">•</span>}
                   <time dateTime={date}>{date}</time>

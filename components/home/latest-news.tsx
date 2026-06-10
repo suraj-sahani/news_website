@@ -18,7 +18,7 @@ export function LatestNews() {
           <div className="flex items-center gap-2 mb-4">
             <Radio className="size-4 text-primary fill-primary/10" />
 
-            <h2 className="text-[10px] font-bold uppercase tracking-widest text-foreground">
+            <h2 className="text-[10px] font-bold uppercase tracking-widest text-white">
               Latest
             </h2>
           </div>
@@ -32,7 +32,7 @@ export function LatestNews() {
                 <span className="text-sm font-bold text-primary">
                   {(i + 1).toString().padStart(2, "0")}
                 </span>
-                <span className="text-sm font-medium text-foreground whitespace-nowrap">
+                <span className="text-sm font-medium text-home-main whitespace-nowrap">
                   {item}
                 </span>
               </div>

@@ -9,12 +9,12 @@ export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden py-0 lg:py-20 bg-[#F7F7F8] dark:bg-[#17181C]">
       {/*
-        MOBILE BACKGROUND IMAGE
+        Mobile Background Image
         Only visible on mobile/tablet. Absolute positioning to fill the hero area.
       */}
       <div className="absolute inset-0 z-0 lg:hidden">
         <Image
-          src="/home/hero-section/hero-image.jpg" // Reusing your hero image as the background
+          src="/home/hero-section/hero-image.jpg"
           alt="Global leaders forum background"
           fill
           priority
@@ -28,7 +28,7 @@ export default function HeroSection() {
         <article className="grid min-h-105 grid-cols-1 items-end pb-12 lg:min-h-0 lg:grid-cols-2 lg:items-center lg:gap-16 lg:pb-0">
           {/* CONTENT COLUMN */}
           <div className="flex flex-col items-start space-y-5 md:space-y-6">
-            {/* Tag/Category - Matches the 'Pill' style from your reference image */}
+            {/* Tag/Category */}
             <Badge
               variant="default"
               className="rounded-md text-white font-bold uppercase"
@@ -36,13 +36,13 @@ export default function HeroSection() {
               World
             </Badge>
 
-            {/* Main Headline - White on Mobile Overlay, Foreground on Desktop */}
-            <h1 className="font-serif text-3xl font-bold leading-tight text-white lg:text-foreground dark:text-white md:text-5xl">
+            {/* Main Headline */}
+            <h1 className="font-serif text-3xl font-bold leading-tight text-home-main  md:text-5xl">
               Global Leaders Convene as Climate Deadline Looms
             </h1>
 
-            {/* Subheader - Hidden or shortened on mobile to match your reference image style if preferred */}
-            <p className="hidden lg:block text-md leading-relaxed text-muted-foreground">
+            {/* Subheader */}
+            <p className="hidden lg:block text-md leading-relaxed text-home-muted">
               Delegates from over 190 nations gathered this week to negotiate
               sweeping emissions targets, as scientists warn the window to avert
               irreversible damage is rapidly closing.
@@ -64,16 +64,13 @@ export default function HeroSection() {
                 <span className="font-bold text-white lg:text-foreground">
                   By Eleanor Hayes
                 </span>
-                <time
-                  dateTime="2025-06-12"
-                  className="text-white/70 lg:text-muted-foreground"
-                >
+                <time dateTime="2025-06-12" className="text-home-muted">
                   June 12, 2025
                 </time>
               </div>
             </div>
 
-            {/* CTA - Only visible on desktop to keep mobile clean like the reference */}
+            {/* CTA */}
             <Link
               href="/article/climate-deadline"
               className="group hidden lg:flex items-center gap-2 text-sm font-bold text-primary transition-colors hover:opacity-80"
@@ -84,7 +81,7 @@ export default function HeroSection() {
           </div>
 
           {/*
-            DESKTOP IMAGE COLUMN
+            Desktop Image Column
             This follows the original layout but is hidden on mobile
             since the image becomes the background.
           */}
