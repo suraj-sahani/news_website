@@ -20,10 +20,18 @@ export default async function ArticlePage({
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full bg-[#0d0d1f] text-white pt-20 pb-24 overflow-hidden">
-        {/* Background Gradients */}
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-rose-900/20 to-transparent blur-3xl opacity-50" />
-        <div className="absolute bottom-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-900/30 to-transparent blur-3xl opacity-50" />
+      <section className="relative w-full bg-article-bg text-white pt-20 pb-24 overflow-hidden">
+        {/* Red Gradient Glow */}
+        <div
+          className="absolute top-15 left-15 w-full h-full bg-glow-red opacity-50 mix-blend-screen"
+          aria-hidden="true"
+        />
+
+        {/* Blue Gradient Glow */}
+        <div
+          className="absolute top-75 right-25 w-full h-full bg-glow-blue opacity-40 mix-blend-screen"
+          aria-hidden="true"
+        />
 
         <Container>
           <div className="container mx-auto px-4 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">

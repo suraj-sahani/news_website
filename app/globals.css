@@ -51,6 +51,20 @@
     --color-home-muted: var(--home-muted-text);
     --color-article-main: var(--article-main-text);
     --color-article-muted: var(--article-muted-text);
+    --color-article-bg: #06070f;
+
+    /* Gradient Tokens */
+    --background-image-glow-red: radial-gradient(
+        70.71% 70.71% at 50% 50%,
+        #ff1e3c 0%,
+        rgba(255, 30, 60, 0) 62%
+    );
+
+    --background-image-glow-blue: radial-gradient(
+        70.71% 70.71% at 50% 50%,
+        #1f3fe6 0%,
+        rgba(31, 63, 230, 0) 62%
+    );
 }
 
 :root {
