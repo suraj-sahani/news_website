@@ -15,13 +15,20 @@ export default function NewsletterForm() {
           Get the week&apos;s most important tech stories, curated by our
           editors, delivered to your inbox every Friday.
         </p>
-        <form className="space-y-4">
+        <form
+          className="space-y-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
           <Input
             type="email"
             placeholder="you@example.com"
             className="bg-white dark:bg-black border-zinc-200 dark:border-zinc-800 focus-visible:ring-primary"
           />
-          <Button className="w-full">Subscribe</Button>
+          <Button className="w-full" type="submit">
+            Subscribe
+          </Button>
         </form>
       </CardContent>
     </Card>
