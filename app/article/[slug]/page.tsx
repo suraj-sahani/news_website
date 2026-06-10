@@ -14,11 +14,6 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  await new Promise((res, rej) => {
-    setTimeout(() => {
-      res(null);
-    }, 5000);
-  });
   const articleData =
     MOCK_ARTICLES.find((article) => article.slug === slug) || MOCK_ARTICLES[0];
 
