@@ -4,7 +4,7 @@
 
 A high-performance, SEO-optimized news application built with **Next.js 16 (App Router)**, **Tailwind CSS v4**, and **Shadcn UI**. This project focuses on zero-layout-shift (CLS), semantic HTML for news discovery, and scalable design tokens.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 20+ 
@@ -21,6 +21,11 @@ A high-performance, SEO-optimized news application built with **Next.js 16 (App 
    ```bash
    pnpm install
    ```
+3. Set up environment variables:
+  Create a .env.local file in the root:
+  ```bash
+  NEXT_PUBLIC_SITE_URL // For generating page metadata
+   ```
 
 3. Run the development server:
    ```bash
@@ -35,7 +40,7 @@ A high-performance, SEO-optimized news application built with **Next.js 16 (App 
 
 ---
 
-## 🏛️ Architecture Decisions
+## Architecture Decisions
 
 ### 1. Data Fetching: Hybrid ISR (Incremental Static Regeneration)
 To balance the need for "Breaking News" freshness with high performance, I would implemente **Time-based ISR** with an **On-demand Revalidation** fallback.
@@ -65,7 +70,7 @@ I developed custom loading skeletons that match the exact line-height, aspect ra
 
 ---
 
-## 📊 Lighthouse Scores
+## Lighthouse Scores
 
 The architecture focuses on achieving perfect "Green" scores across the board. By using **Tailwind v4** (reduced CSS bundle) and **Next.js 15 Streaming**, we achieve near-instantaneous load times.
 
@@ -74,7 +79,6 @@ The architecture focuses on achieving perfect "Green" scores across the board. B
   <img src="public/screenshots/lighthouse-home.png" width="800" alt="Lighthouse Home Score">
 </p>
 
-*Key Highlight: LCP (Largest Contentful Paint) is under 1.2s due to prioritized hero image loading and ISR.*
 
 ### Article Page
 <p align="left">
