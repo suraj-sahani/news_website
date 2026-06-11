@@ -87,6 +87,32 @@ The architecture focuses on achieving perfect "Green" scores across the board. B
 
 ---
 
+## Cuts
+
+Below are the primary cuts and design choices implemented in this version. Each image represents a core component of the final output.
+
+Dark Mode
+
+<img src="./cuts/cut-1.png" alt="Project Cuts" width="600">
+
+Light Mode
+
+<img src="./cuts/cut-2.png" alt="Project Cuts" width="600">
+    
+
+There is a stout difference between the hero section in the home page for light mode and the dark mode. In the dark mode, the hero-image should not change it width based on the theme toggle as a result of which, the design for the light mode was followed.
+
+Trending News Section(Mobile View)
+Similar to the above case, the trending news section for the mobile views has a drastic change in design for light and dark mode. Thus, since I preferred the look of the dark mode as it had more in common with the design system, the design was picked of the dark mode.
+
+Light Mode
+
+<img src="./cuts/cut-1.png" alt="Project Cuts" width="600">
+
+Dark Mode
+
+<img src="./cuts/cut-1.png" alt="Project Cuts" width="600">
+    
 ## 🛠️ Tech Stack
 - **Framework:** Next.js 16
 - **Package Manager:** pnpm

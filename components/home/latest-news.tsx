@@ -18,7 +18,7 @@ export function LatestNews() {
           <div className="flex items-center gap-2 mb-4">
             <Radio className="size-4 text-primary fill-primary/10" />
 
-            <h2 className="text-[10px] font-bold uppercase tracking-widest text-white">
+            <h2 className="text-[10px] font-bold uppercase tracking-widest text-home-main">
               Latest
             </h2>
           </div>
@@ -43,7 +43,7 @@ export function LatestNews() {
         {/* --- DESKTOP VIEW: Marquee Ticker --- */}
         <div className="hidden lg:flex items-center gap-4">
           {/* LATEST BADGE */}
-          <div className="flex items-center gap-2 shrink-0 rounded-md bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-tighter text-primary-foreground">
+          <div className="flex items-center gap-2 shrink-0 rounded-md bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-tighter text-white">
             <Radio size={14} />
             Latest
           </div>
