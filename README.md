@@ -93,11 +93,11 @@ Below are the primary cuts and design choices implemented in this version. Each 
 
 Dark Mode
 
-<img src="./cuts/cut-1.png" alt="Project Cuts" width="600">
+<img src="public/screenshots/cuts/cut-1.png" alt="Homepage hero dark" width="600">
 
 Light Mode
 
-<img src="./cuts/cut-2.png" alt="Project Cuts" width="600">
+<img src="public/screenshots/cut-2.png" alt="Homepage hero light" width="600">
     
 
 There is a stout difference between the hero section in the home page for light mode and the dark mode. In the dark mode, the hero-image should not change it width based on the theme toggle as a result of which, the design for the light mode was followed.
@@ -107,11 +107,11 @@ Similar to the above case, the trending news section for the mobile views has a 
 
 Light Mode
 
-<img src="./cuts/cut-1.png" alt="Project Cuts" width="600">
+<img src="public/screenshots/cuts/cut-3.png" alt="Homepage trending light" width="600">
 
 Dark Mode
 
-<img src="./cuts/cut-1.png" alt="Project Cuts" width="600">
+<img src="public/screenshots/cut-4.png" alt="Homepage trending dark" width="600">
     
 ## 🛠️ Tech Stack
 - **Framework:** Next.js 16
